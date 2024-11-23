@@ -7,7 +7,7 @@ import GalleryFrame from './Gallery-Frame';
 import ButtonsBar from './Buttons-bar';
 
 function App() {
-  let [artId, setArtId] = useState(12720)
+  let [artId, setArtId] = useState(1500)
   let [data, setData] = useState({})
 
   useEffect(() => {
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <GalleryFrame objectImg={data.primaryImage} artist={data.artistDisplayName} title={data.title} />
+      <GalleryFrame objectImg={data.primaryImageSmall} objectIdNumber={data.objectID} artist={data.artistDisplayName} title={data.title} />
       <ButtonsBar handleIterate={handleIterate} />
     </div>
   );
