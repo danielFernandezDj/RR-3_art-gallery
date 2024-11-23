@@ -7,7 +7,7 @@ import GalleryFrame from './Gallery-Frame';
 import ButtonsBar from './Buttons-bar';
 
 function App() {
-  let [artId, setArtId] = useState(1500)
+  let [artId, setArtId] = useState(12730)
   let [data, setData] = useState({})
 
   useEffect(() => {
